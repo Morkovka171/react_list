@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(175, 239, 236);
+    background-color: rgb(199, 246, 243);
     color: rgb(25, 128, 135);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -53,9 +53,9 @@ main .edit-icon:hover{
     opacity: 0.5;
 }
 
-aside form input:not([type="checkbox"]),
-aside form textarea,
-aside form button{
+form input:not([type="checkbox"]),
+form textarea,
+form button{
     width: 90%;
     padding: 15px 5%;
     font-family: 'Montserrat', sans-serif;
@@ -66,17 +66,38 @@ aside form button{
     color: rgb(25, 128, 135);
     outline: none;
     font-size: 15px;
+    border: 1px solid rgb(25, 128, 135);
 }
 
-aside form input[type="checkbox"]{
+form input[type="checkbox"]{
     margin: 10px;
 }
 
-aside form button{
+form button{
     width: 100%;
     cursor: pointer;
     transition: transform 500ms ease;
+    background-color: rgb(25, 128, 135);
+    color: #fff;
 }
-aside form button:hover{
-    transform: scale(1.1);
+form button:hover{
+    background-color: #fff;
+    color: rgb(25, 128, 135);
+}
+
+.user form {
+    margin-top: 20px;
+}
+
+.user form input,
+.user form textarea{
+    background-color: rgb(254, 254, 254);
+}
+
+.user form button{
+    transform: none;
+}
+.user form button:hover{
+    background-color: rgb(254, 254, 254);
+    color: rgb(25, 128, 135); ;
 }
